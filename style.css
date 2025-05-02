@@ -1,0 +1,94 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Input and Button Styles */
+input {
+  width: 100%;
+  padding: 12px 12px 12px 50px; /* Adjust left padding to accommodate larger emoji */
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.emoji {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #007bff;
+  transition: transform 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input:focus + .input-group .emoji {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+}

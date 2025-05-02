@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login/Signup</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <!-- Login Form Box -->
+    <div class="form-box" id="login-box">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <span class="emoji email">📧</span> <!-- Email emoji -->
+          <input type="email" placeholder="Email" id="loginEmail" required />
+        </div>
+        <div class="input-group">
+          <span class="emoji password">🔒</span> <!-- Password emoji -->
+          <input type="password" placeholder="Password" id="loginPassword" required />
+        </div>
+        <button type="submit">🔑 Login</button> <!-- Login button emoji -->
+      </form>
+      <p>Don't have an account? <a href="#" onclick="switchForm('signup')">Sign up</a></p>
+    </div>
+
+    <!-- Signup Form Box (Initially Hidden) -->
+    <div class="form-box" id="signup-box" style="display: none;">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <div class="input-group">
+          <span class="emoji name">👤</span> <!-- Name emoji -->
+          <input type="text" placeholder="Full Name" id="signupName" required />
+        </div>
+        <div class="input-group">
+          <span class="emoji email">📧</span> <!-- Email emoji -->
+          <input type="email" placeholder="Email" id="signupEmail" required />
+        </div>
+        <div class="input-group">
+          <span class="emoji password">🔑</span> <!-- Password emoji -->
+          <input type="password" placeholder="Password" id="signupPassword" required />
+        </div>
+        <div class="input-group">
+          <span class="emoji confirm-password">🔒</span> <!-- Confirm password emoji -->
+          <input type="password" placeholder="Confirm Password" id="signupConfirmPassword" required />
+        </div>
+        <button type="submit">🚀 Sign Up</button> <!-- Signup button emoji -->
+      </form>
+      <p>Already have an account? <a href="#" onclick="switchForm('login')">Login</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
