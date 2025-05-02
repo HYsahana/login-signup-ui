@@ -1,6 +1,6 @@
-Here’s a simple template for your GitHub repository that you can copy and paste:
 
-````markdown
+
+
 # Login/Signup UI Project
 
 A simple Login/Signup UI project built using **HTML**, **CSS**, and **JavaScript**. This project demonstrates how to create a basic user interface with proper validation and responsiveness for login and signup forms.
