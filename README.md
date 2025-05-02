@@ -37,11 +37,10 @@ A simple Login/Signup UI project built using **HTML**, **CSS**, and **JavaScript
 
 This project is licensed under the **MIT License**.
 
+
 ## Contact
 
 * GitHub: [https://github.com/HYsahana](https://github.com/HYsahana)
 
-```
 
-This template provides a clean and concise overview of your project for your GitHub repository. You can adjust the repository name, contact info, or other sections as needed.
-```
+
